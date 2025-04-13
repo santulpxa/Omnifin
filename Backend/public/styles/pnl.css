@@ -1,0 +1,200 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* head_body */
+.headbox{
+    height: 10vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+   border-bottom: 1px solid black;
+}
+
+.headtxt{
+    margin: 15px 0px 10px 60px;
+}
+
+/* main_body */
+.main_body{
+    display: flex;
+}
+
+/* side bar */
+.sidebar{
+    height: 90vh;
+    width: 19%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.contant_item{
+    margin-top: 10% ;
+    font-size:  x-large;  
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+.c_item{
+    text-align: center;
+   justify-items: center;
+   padding: 5%;
+   margin-bottom: 10%;
+   font-size: xx-large ; 
+    cursor: pointer;
+   background-color: aqua;
+}
+
+.on_pnl{
+    background-color: rgb(77, 121, 121);
+}
+
+.c_item:hover{
+    background-color: rgb(77, 121, 121);
+}
+
+/* main_container */
+.table_container{
+    width: 80%; 
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.table_head{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(77, 121, 121);
+    justify-items: center;
+    align-content: center;
+    
+}
+
+
+/* tabel body */
+.table_body{
+    background-color: rgba(199, 196, 207, 0.541);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.all_tabel{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+   
+}
+
+
+/* all  table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .box{
+    width: 200px;
+  }
+  
+  .table_margin{
+    margin-bottom: 2.5vh;
+  }
+
+  table th, table td {
+    border: 1px solid #aaa;
+    padding: 0; /* Let inputs fill the cell */
+    position: relative;
+    height: 50px;
+  }
+.year_box{
+    background-color: #e1f7fa;
+}  
+
+  table th {
+    background-color: #d9f0f3;
+  }
+  
+  table td:hover::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #f0fbfd;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+  
+  table .highlight-row {
+    background-color: #e1f7fa;
+    font-weight: bold;
+  }
+  
+  table input[type="date"],
+  table input[type="number"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 8px;
+    box-sizing: border-box;
+    background-color: #f7fafd;
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 0;
+  }
+  
+  table input[type="date"]:hover,
+  table input[type="number"]:hover {
+    background-color: #eaffff;
+  }
+  
+  table input[type="date"]:focus,
+  table input[type="number"]:focus {
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 4px #66c;
+  }
+
+  /* button style */
+
+  .button-container {
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    margin: 5px 50px 50px 50px;
+   
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #196103;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .action-button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+  }
+  
+  
+

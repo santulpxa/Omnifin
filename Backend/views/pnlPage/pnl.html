@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMNIFIN</title>
+    <link rel="stylesheet" href="/styles/pnl.css">
+</head>
+
+<body>
+    <div class="headbox">
+        <h1 class="headtxt">OMNIFIN</h1>
+    </div>
+
+    <!-- main body -->
+    <div class="main_body">
+
+        <!-- side bar -->
+        <div class="sidebar">
+            <div class="contant_item">
+                <div class="c_item" onclick="window.location.href = '/' ">Home</div>
+                <div class="c_item on_pnl" onclick="window.location.href = '/pnl'">Profit and Loss</div>
+                <div class="c_item" onclick="window.location.href = '/'">Balance Sheet</div>
+            </div>
+        </div>
+
+        <!-- main_container -->
+        <div class="table_container">
+            <div class="table_head">
+                <h1>Profit and Loss</h1>
+            </div>
+
+            <div class="table_body">
+
+                <!-- Revenue Table -->
+                <div class="all_tabel">
+                    <form action="/create/revenue_submit" method="post">
+                        <table class="table_margin">
+                            <tr>
+                                <th rowspan="1">Statements</th>
+                                <th colspan="5">Revenue</th>
+                            </tr>
+                            <tr>
+                                <th class="box">Year</th>
+                                <th><input type="date" ></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                            </tr>
+                            <tr>
+                                <td class="box">Revenue From Operation</td>
+                                <td><input type="number" name="C1R1"/></td>
+                                <td><input type="number" name="C2R1"/></td>
+                                <td><input type="number" name="C3R1"/></td>
+                                <td><input type="number" name="C4R1"/></td>
+                                <td><input type="number" name="C5R1"/></td>
+                            </tr>
+                            <tr>
+                                <td>Other Income</td>
+                                <td><input type="number" name="C1R2"/></td>
+                                <td><input type="number" name="C2R2"/></td>
+                                <td><input type="number" name="C3R2"/></td>
+                                <td><input type="number" name="C4R2"/></td>
+                                <td><input type="number" name="C5R2"/></td>
+                            </tr>
+                            <tr>
+                                <td>Provisions</td>
+                                <td><input type="number" name="C1R3"/></td>
+                                <td><input type="number" name="C2R3"/></td>
+                                <td><input type="number" name="C3R3"/></td>
+                                <td><input type="number" name="C4R3"/></td>
+                                <td><input type="number" name="C5R3"/></td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Total Revenue/Income</td>
+                                <td>Amount</td>
+                                <td>Amount</td>
+                                <td>Amount</td>
+                                <td>Amount</td>
+                                <td>Amount</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Total Revenue</td>
+                                <td>Output Value</td>
+                                <td>Output Value</td>
+                                <td>Output Value</td>
+                                <td>Output Value</td>
+                                <td>Output Value</td>
+                            </tr>
+                        </table>
+
+                        <!-- buttons -->
+                        <div class="button-container">
+                            <button class="action-button" formaction="/profit/calculate">Calculate</button>
+                            <!-- <button class="action-button" formaction="/create/revenue_submit">Save</button> -->
+                        </div>
+                    </form>
+
+                    <!-- Expenses Table -->
+                    <form action="/create/expense_submit" method="post">
+                        <table class="table_margin">
+                            <tr>
+                                <th rowspan="1">Statements</th>
+                                <th colspan="5">Expense</th>
+                            </tr>
+                            <tr>
+                                <th class="box">Year</th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                            </tr>
+
+                            <tr>
+                                <td>Cost of Material</td>
+                                <td><input type="number" name="C1R1"/></td>
+                                <td><input type="number" name="C2R1"/></td>
+                                <td><input type="number" name="C3R1"/></td>
+                                <td><input type="number" name="C4R1"/></td>
+                                <td><input type="number" name="C5R1"/></td>
+                            </tr>
+                            <tr>
+                                <td>Changes in Inventories of Finished Goods</td>
+                                <td><input type="number" name="C1R2"/></td>
+                                <td><input type="number" name="C2R2"/></td>
+                                <td><input type="number" name="C3R2"/></td>
+                                <td><input type="number" name="C4R2"/></td>
+                                <td><input type="number" name="C5R2"/></td>
+                            </tr>
+                            <tr>
+                                <td>Cost of Goods Sold</td>
+                                <td><input type="number" name="C1R3"/></td>
+                                <td><input type="number" name="C2R3"/></td>
+                                <td><input type="number" name="C3R3"/></td>
+                                <td><input type="number" name="C4R3"/></td>
+                                <td><input type="number" name="C5R3"/></td>
+                            </tr>
+                            <tr>
+                                <td>Employee Benefits Expense</td>
+                                <td><input type="number" name="C1R4"/></td>
+                                <td><input type="number" name="C2R4"/></td>
+                                <td><input type="number" name="C3R4"/></td>
+                                <td><input type="number" name="C4R4"/></td>
+                                <td><input type="number" name="C5R4"/></td>
+                            </tr>
+                            <tr>
+                                <td>Depreciation</td>
+                                <td><input type="number" name="C1R5"/></td>
+                                <td><input type="number" name="C2R5"/></td>
+                                <td><input type="number" name="C3R5"/></td>
+                                <td><input type="number" name="C4R5"/></td>
+                                <td><input type="number" name="C5R5"/></td>
+                            </tr>
+                            <tr>
+                                <td>Finance Cost</td>
+                                <td><input type="number" name="C1R6"/></td>
+                                <td><input type="number" name="C2R6"/></td>
+                                <td><input type="number" name="C3R6"/></td>
+                                <td><input type="number" name="C4R6"/></td>
+                                <td><input type="number" name="C5R6"/></td>
+                            </tr>
+                            <tr>
+                                <td>Other Expense</td>
+                                <td><input type="number" name="C1R7"/></td>
+                                <td><input type="number" name="C2R7"/></td>
+                                <td><input type="number" name="C3R7"/></td>
+                                <td><input type="number" name="C4R7"/></td>
+                                <td><input type="number" name="C5R7"/></td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Total Expenses</td>
+                                <td>Amount</td>
+                                <td>Amount</td>
+                                <td>Amount</td>
+                                <td>Amount</td>
+                                <td>Amount</td>
+                            </tr>
+                            <!-- <tr class="highlight-row">
+                                <td>Profit before Tax</td>
+                                <td>Output Value</td>
+                                <td>Output Value</td>
+                                <td>Output Value</td>
+                                <td>Output Value</td>
+                                <td>Output Value</td>
+                            </tr> -->
+                        </table>
+
+                        <!-- buttons -->
+                        <div class="button-container">
+                            <button class="action-button" formaction="/loss/calculate">Calculate</button>
+                            <!-- <button class="action-button" formaction="/create/expense_submit">Save</button> -->
+                        </div>
+                    </form>
+
+                    <!-- Tax Table -->
+                    <form action="/tax_submit" method="post">
+                        <table class="table_margin">
+                            <tr>
+                                <th rowspan="1">Statements</th>
+                                <th colspan="5">Tax</th>
+                            </tr>
+                            <tr>
+                                <th class="box">Year</th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                                <th><input type="date"></th>
+                            </tr>
+                            <tr>
+                              <td>Current Tax</td>
+                              <td><input type="number" name="C1R1"></td>
+                              <td><input type="number" name="C2R1"></td>
+                              <td><input type="number" name="C3R1"></td>
+                              <td><input type="number" name="C4R1"></td>
+                              <td><input type="number" name="C5R1"></td>
+                            </tr>
+                            <tr>
+                              <td>Deffered Tax Expenses/(Credit)</td>
+                              <td><input type="number" name="C1R2"></td>
+                              <td><input type="number" name="C2R2"></td>
+                              <td><input type="number" name="C3R2"></td>
+                              <td><input type="number" name="C4R2"></td>
+                              <td><input type="number" name="C5R2"></td>
+                            </tr>
+                            <tr>
+                              <td>Tax For Earlier Year / MAT</td>
+                              <td><input type="number" name="C1R3"></td>
+                              <td><input type="number" name="C2R3"></td>
+                              <td><input type="number" name="C3R3"></td>
+                              <td><input type="number" name="C4R3"></td>
+                              <td><input type="number" name="C5R3"></td>
+                            </tr>
+                            <tr>
+                              <td>Provision For Tax</td>
+                              <td><input type="number" name="C1R4"></td>
+                              <td><input type="number" name="C2R4"></td>
+                              <td><input type="number" name="C3R4"></td>
+                              <td><input type="number" name="C4R4"></td>
+                              <td><input type="number" name="C5R4"></td>
+                            </tr>
+                            <tr class="highlight-row">
+                              <td>Total Tax</td>
+                              <td>Output</td>
+                              <td>Output</td>
+                              <td>Output</td>
+                              <td>Output</td>
+                              <td>Output</td>
+                            </tr>
+                        </table>
+                         <!-- buttons -->
+                        <div class="button-container">
+                          <button class="action-button">Calculate</button>
+                          <button class="action-button">Save</button>
+                        </div>
+                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMNIFIN</title>
+    <link rel="stylesheet" href="styles/homePage.css">
+    <!-- <link rel="stylesheet" href="PNLStyle.css"> -->
+
+</head>
+<body>
+   <div class="headbox">
+            <h1 class="headtxt">OMNIFIN</h1>
+     </div>
+
+     <!-- main body -->
+     <div class="main_body">
+
+         <!-- side bar -->
+         <div class="sidebar">
+            <div class="contant_item">
+                <div class="c_item after_on" onclick="window.location.href = '/' ">Home</div>
+                 <div class="c_item" onclick="window.location.href = '/pnl' ">Profit and Loss</div></a>
+                 <div class="c_item" onclick="window.location.href = '/' ">Balance Sheet</div>
+            </div>
+        </div>
+
+        <!-- main_container -->
+
+        <div class="form-container">
+            <h2 class="company_head">Company Information </h2>
+        
+           
+            <form action="/create" method="post">
+              <label for="companyName">Name of the Company</label>
+              <input type="text" id="companyName" name="companyName" placeholder="Enter company name">
+              <label for="duration">Duration Period</label>
+              <select id="duration" name="duration">
+                <option value="">-- Select Duration --</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="half-yearly">Half Yearly</option>
+                <option value="annually">Annually</option>
+              </select>
+        
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+    </div>
+</body>
+</html>

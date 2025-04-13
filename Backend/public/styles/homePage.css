@@ -1,0 +1,117 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* head_body */
+.headbox{
+    height: 10vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+   border-bottom: 1px solid black;
+}
+
+.headtxt{
+    margin: 15px 0px 10px 60px;
+}
+
+/* main_body */
+.main_body{
+    display: flex;
+}
+
+/* side bar */
+.sidebar{
+    height: 90vh;
+    width: 19%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.contant_item{
+    margin-top: 10% ;
+    font-size:  x-large;  
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+.c_item{
+    text-align: center;
+   justify-items: center;
+   padding: 5%;
+   margin-bottom: 10%;
+   font-size: xx-large ; 
+    cursor: pointer;
+   background-color: aqua;
+}
+
+.after_on{
+    background-color: rgb(77, 121, 121);
+}
+
+.c_item:hover{
+    background-color: rgb(77, 121, 121);
+}
+
+/* main_container */
+.main_container{
+    background-color: rgba(224, 222, 222, 0.541);
+    width: 90%;
+    height: 90vh;
+}
+
+.form-container {
+   width: 60%;
+   height: 60vh;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.company_head {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
